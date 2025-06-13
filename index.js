@@ -11,7 +11,7 @@ const multer = require('multer');
 const path = require('path');
 const cors = require('cors');
 const config = require('./config/config.js'); // Menggunakan file konfigurasi
-const { verifyToken } = require('./middleware/authJwt');
+const { verifyToken } = require('./middleware/auth.middleware.js');
 
 // 2. Inisialisasi Aplikasi Express
 const app = express();
