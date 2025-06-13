@@ -1,31 +1,29 @@
 {
-  "name": "api-barang",
+  "name": "nama-proyek-anda",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Tontowow/api-barang.git"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "db:migrate": "npx sequelize-cli db:migrate"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Tontowow/api-barang/issues"
-  },
-  "homepage": "https://github.com/Tontowow/api-barang#readme",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0",
-    "express-session": "^1.18.1",
-    "multer": "^2.0.1",
-    "mysql2": "^3.14.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.10.2",
     "passport": "^0.7.0",
-    "passport-google-oauth20": "^2.0.0"
+    "passport-google-oauth20": "^2.0.0",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "sequelize-cli": "^6.6.2"
   }
 }
